@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Hurricane&family=Oswald:wght@500&family=Pacifico&family=Ramaraja&family=Red+Hat+Mono:ital,wght@0,300;0,500;1,300&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Hurricane&family=Pacifico&family=Ramaraja&family=Red+Hat+Mono:wght@500&display=swap"
+        rel="stylesheet">
+
+    <!-- /* css reset */ -->
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            /* height: */
+            width: auto;
+            color: white;
+            background: url('img/food.jpg');
+            zoom: 80%;
+            font-family: 'Dancing Script', cursive;
+        }
+
+
+        .left {
+            /* border: 2px solid red; */
+            display: inline-block;
+            position: absolute;
+            left: 32px;
+            top: 20px;
+
+        }
+
+        .mid {
+            /* border: 2px solid red; */
+            display: block;
+            width: 33%;
+            margin: 20px auto;
+        }
+
+        .right {
+            /* border: 2px solid red; */
+            display: inline-block;
+            position: absolute;
+            right: 32px;
+            top: 20px;
+        }
+
+        .navBar {
+            display: inline-block;
+
+        }
+
+        .navBar li {
+            display: inline-block;
+            font-size: 26px;
+        }
+
+        .navBar li a {
+
+            text-decoration: none;
+            padding: 4px 14px;
+            font-size: 34px;
+            margin: 2px 13px;
+            width: 19px;
+            color: white;
+            border: 3px solid white;
+            /* border-radius: 15px; */
+        }
+
+        .navBar li a:hover,
+        .navBar li a.active {
+
+            font-weight: bold;
+            color: #FFB80E;
+            border: 3px solid #FFB80E;
+
+        }
+
+        .left img {
+            width: 107px;
+            filter: invert(100%);
+            border: 1px solid black;
+            border-radius: 78px;
+            padding: 11%;
+
+        }
+
+        .left div {
+            text-align: justify;
+            font-size: 38px;
+
+        }
+
+        .right button {
+            /* background-color: #982121; */
+        }
+
+        .btn {
+            margin: 0px 9px;
+            color: white;
+            background-color: black;
+            padding: 15px 14px;
+            border: 4px solid white;
+            /* border-radius: 20px; */
+            font-size: 26px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            /* background-color: white; */
+            color: #E32929;
+            border: 3px solid #E32929;
+            /* border-radius: 10px; */
+            font-weight: bold;
+        }
+
+        #logo {
+            cursor: pointer;
+        }
+
+        .container {
+            border: 6px solid white;
+            margin: 281px 272px;
+            padding: 75px;
+            width: 33%;
+            display: block;
+            float: right;
+            /* border-radius: 28px; */
+        }
+
+        .form-group input {
+            text-align: center;
+            display: block;
+            width: 508px;
+            padding: 1px;
+            font-size: 25px;
+            border: 2px solid white;
+            border-radius: 12px;
+            margin: 11px auto;
+        }
+
+        .container h1 {
+            text-align: center;
+            font-family: 'Dancing Script', cursive;
+            font-weight: bold;
+            color: white;
+            border: 4px solid white;
+            ;
+            margin: auto;
+            width: 40%;
+            font-size: 60px;
+
+        }
+
+        /* .container h1:hover { 
+             text-align: center;
+            font-family: 'Dancing Script', cursive;
+            font-weight: bold;
+             background-color: rgb(255, 211, 182); 
+             color: #982121;
+            border: 4px solid #982121;
+            margin: auto;
+            width: 40%;
+            cursor: pointer;
+            font-size: 60px; 
+
+        }*/
+
+        .container button {
+            display: block;
+            width: 66%;
+            margin: 22px auto;
+            font-size: 30px;
+        }
+
+        .container p {
+            /* border: 1px solid red; */
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin: 32px;
+            padding: 18px;
+            font-size: 35px;
+        }
+    </style>
+</head>
+<header class="header">
+    <!-- left box for logo -->
+    <div class="left" id="logo">
+        <img src="img/logo.png" alt="">
+        <div>Restaurant</div>
+    </div>
+    <!-- mid box for navbar -->
+    <div class="mid">
+        <ul class="navBar">
+            <li><a href="#" class="active">About</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Book A Table</a></li>
+            <li><a href="#">Contact Us</a></li>
+
+
+        </ul>
+    </div>
+    <!-- right box for buttons -->
+    <div class="right">
+        <button class="btn">Call Now</button>
+        <button class="btn">Rate Us</button>
+
+    </div>
+    <div class="container">
+        <H1>Welcome</H1>
+        <form action="noaction.php">
+            <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias officia autem corporis adipisci,
+                    asperiores nihil numquam iusto perferendis quas? Explicabo vel alias quidem, neque eveniet earum
+                    reiciendis id perferendis nam?</p>
+            </div>
+            <!-- <div class="form-group">
+                <input type="text" name="" id="" placeholder="Name">
+            </div>
+
+            <div class="form-group">
+                <input type="text" name="" id="" placeholder="Address">
+            </div>
+
+            <div class="form-group">
+                <input type="text" name="" id="" placeholder="Phone No.">
+            </div>
+
+            <div class="form-group">
+                <input type="text" name="" id="" placeholder="email id">
+            </div> -->
+            <button class="btn">Order Online</button>
+
+
+        </form>
+    </div>
+</header>
+
+<body>
+
+</body>
+<!-- This is a website designed by Ayan Banerjee -->
+</html>
